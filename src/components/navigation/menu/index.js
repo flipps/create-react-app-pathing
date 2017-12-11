@@ -16,10 +16,10 @@ const MenuItem = styled.li`
   }
 `;
 
-const Menu = ({link, text}) => {
+const Menu = ({link, text, handleClick}) => {
   return (
     <MenuList>
-      <MenuItem>
+      <MenuItem onClick={handleClick}>
         <a href={link} target="_blank">{text}</a>
       </MenuItem>
     </MenuList>
